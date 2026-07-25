@@ -1,0 +1,31 @@
+# Core
+numpy>=1.26
+pandas>=2.1
+scikit-learn>=1.4
+scipy>=1.11
+
+# Tree-based models
+lightgbm>=4.3
+xgboost>=2.0
+
+# Classical + deep-learning models
+prophet>=1.1          # per-series Prophet
+statsmodels>=0.14     # SARIMA (aggregate)
+torch>=2.2            # PatchTST / DLinear
+
+# Experiment tracking
+wandb>=0.17
+mlflow>=2.9           # optional (team logs primarily to wandb)
+joblib>=1.3           # pickles the sklearn Pipeline for the model artifact
+
+# Notebooks / plotting
+jupyter>=1.0
+ipykernel>=6.0
+matplotlib>=3.8
+seaborn>=0.13
+
+# Kaggle submission upload (optional CLI)
+kaggle>=1.6
+
+# TimesFM (bonus, foundation model) — install in a SEPARATE venv, pulls its own torch:
+#   pip install "timesfm[torch]"   ->  google/timesfm-2.5-200m-pytorch
